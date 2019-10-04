@@ -1,10 +1,10 @@
-package com.web;
+package com.web.entity;
 
 /**
  * @author cyq-xn
  * @ClassName User
  * @Description TODO
- * @Date 2019/9/26
+ * @Date 2019/10/2
  * @Version 1.0
  **/
 public class User {

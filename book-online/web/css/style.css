@@ -52,18 +52,16 @@ body {
 a, a:link {
     color: #eee;
     text-decoration: none;
-
 }
 
 /*伪类样式，鼠标悬停颜色*/
 a:hover {
     color: #fff;
 }
-
+/*顶部*/
 #top {
     height: 50px;
-    /*background: linear-gradient(to bottom, rgb(145, 101, 144), rgb(221, 82, 70));*/
-    background: rgb(221, 82, 70);
+    background: linear-gradient(to bottom, rgb(3, 169, 244), rgb(179, 136, 255));
     color: #d5d55d;
     font-size: 14px;
     display: flex;
@@ -75,28 +73,24 @@ a:hover {
     margin: 0 auto;
     text-align: center;
 }
-
 #top ul {
     display: flex;
     align-items: center;
     list-style: none;
 }
-
 #top ul li {
     flex: 0 0 60px;
 }
-
 .avatar {
     width: 33px;
     height: 33px;
     border-radius: 50%;
 }
-
 .container {
     width: 85%;
     margin: 0 auto;
 }
-
+/*脚注*/
 footer {
     height: 40px;
     display: flex;
