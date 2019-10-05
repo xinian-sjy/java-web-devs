@@ -62,6 +62,21 @@
         /*    text-decoration: none;*/
         /*    color: white;*/
         /*}*/
+        @font-face {
+            font-family: 'iconfont';  /* project id 1443370 */
+            src: url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.eot');
+            src: url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.svg#iconfont') format('svg');
+        }
+        .iconfont{
+            font-family:"iconfont" !important;
+            font-size:25px;font-style:normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0.2px;
+            -moz-osx-font-smoothing: grayscale;}
         #top{
             display: flex;
             justify-content: space-between;
@@ -170,7 +185,7 @@
 </div>
 <div class="container">
     <div class="left">
-        <span><img src="images/3.jpg" class="avatar" alt=""></span>
+        <span><img src="images/12.jpg" class="avatar" alt=""></span>
         <p style="margin-left: 91px;
             font-family: 楷体;
             font-size: 24px;
@@ -184,14 +199,15 @@
     </div>
     <div class="right">
         <div class="date-div">
-            <span><img  class="date-avatar" src="images/3.jpg" alt=""></span>
+            <span><img  class="date-avatar" src="images/12.jpg" alt=""></span>
             <p style="margin-left: 170px;font-size:14px;margin-top: -150px"> 常居住地:</p>
             <p style="margin-left: 170px;font-size: 14px;margin-top: 20px"> 账户帐号:</p>
             <p style="margin-left: 170px;font-size: 14px;margin-top: 20px">注册日期:</p>
             <hr style="margin-top: 90px">
             <p style="margin-top: 10px;margin-left: 5px;font-size: 14px">坚持到底</p>
         </div>
-        <p style="font-size: 18px;color: #20a162;margin-top: 10px">我的喜欢</p>
+        <p style="font-size: 18px;color: #20a162;margin-top: 10px">我的喜欢
+        <i class="iconfont" style="color: red" >&#xe610;</i></p>
 
         <p style="font-size: 14px;margin-top: 20px">
             <a href="#" style="text-decoration: none;color: #1e9eb3">皮卡皮卡</a>

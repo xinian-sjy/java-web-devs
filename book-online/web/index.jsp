@@ -28,7 +28,7 @@
         }
         .iconfont{
             font-family:"iconfont" !important;
-            font-size:30px;font-style:normal;
+            font-size:25px;font-style:normal;
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke-width: 0.2px;
             -moz-osx-font-smoothing: grayscale;}
@@ -152,11 +152,11 @@
             background-color: #FFFFFF;
             padding: 10px 10px 10px 10px;
         }
-        .button{
+        /*.button{*/
 
-            outline:none;
+        /*    outline:none;*/
 
-        }
+        /*}*/
     </style>
 </head>
 <body>
@@ -170,8 +170,12 @@
 <div class="search-wrap">
     <h2 >读书时刻</h2>
     <input type="text" placeholder="输入要搜索的内容" class="input-box" >
-   <button style="border: 0px solid rgb(221, 221, 221)" class="button">
-       <i class="iconfont" style="color: white"  >&#xe605;</i>
+
+   <button style="color:  rgb(221, 221, 221)" class="button">
+       <a href="search.jsp">
+           <i class="iconfont" style="color: white"  >&#xe605;</i>
+       </a>
+
    </button>
 
 <%--    <input type="button" value="&#xe605;">--%>
