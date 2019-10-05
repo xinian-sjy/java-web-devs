@@ -34,7 +34,35 @@
             margin: 0;
             padding: 0;
         }
-        .top{
+        /*.top{*/
+        /*    !*display: flex;*!*/
+        /*    !*justify-content: space-between;*!*/
+        /*    !*background-color: rgb(78,42,64);*!*/
+        /*    !*width: 100%;*!*/
+        /*    !*height: 60px;*!*/
+        /*    !*align-items: center;*!*/
+        /*    display: flex;*/
+        /*    justify-content: space-between;*/
+        /*    background-color: rgb(78,42,64);*/
+        /*    width: 100%;*/
+        /*    height: 60px;*/
+        /*    align-items: center;*/
+        /*}*/
+        /*.top ul{*/
+        /*    display: flex;*/
+        /*    list-style: none;*/
+        /*    padding-left: 30px;*/
+        /*    padding-right: 10px;*/
+        /*}*/
+        /*.top ul li{*/
+        /*    margin-right: 20px;*/
+        /*    flex: 0 0 60px;*/
+        /*}*/
+        /*.top ul li a{*/
+        /*    text-decoration: none;*/
+        /*    color: white;*/
+        /*}*/
+        #top{
             display: flex;
             justify-content: space-between;
             background-color: rgb(78,42,64);
@@ -42,17 +70,17 @@
             height: 60px;
             align-items: center;
         }
-        .top ul{
+        #top ul{
             display: flex;
             list-style: none;
             padding-left: 30px;
             padding-right: 10px;
         }
-        .top ul li{
-            margin-right: 20px;
+        #top ul li{
+            margin-right: 10px;
             flex: 0 0 60px;
         }
-        .top ul li a{
+        #top ul li a{
             text-decoration: none;
             color: white;
         }
@@ -61,7 +89,7 @@
             width: 100%;
             height: 80px;
             padding-left: 5%;
-            background-color: rgb(163,92,143);
+            background-color: rgb(255, 106, 92);
             /*文本垂直居中*/
             line-height: 80px;
             justify-content: space-between;
@@ -87,16 +115,16 @@
             display: flex;
             margin-right: 5%;
             margin-left: 5%;
-            border: 1px solid #aaaaaa;
+            border: 0px solid #aaaaaa;
         }
         .left{
             flex: 0 0 60%;
-            border: 1px solid #9b9b9b;
+            border: 0.5px solid #9b9b9b;
             padding-top: 10px;
         }
         .right{
             flex: 0 0 40%;
-            border: 1px solid #9b9b9b;
+            border: 0.5px solid #9b9b9b;
         }
         .avatar{
             width: 80px;
@@ -126,15 +154,15 @@
     </style>
 </head>
 <body>
-<div class="top">
+<div id="top">
     <jsp:include page="Top.jsp"/>
 </div>
 <div class="search-wrap">
     <ul style="text-align: left">
-        <li><a href="#">首页</a></li>
+        <li><a href="#">记录生活</a></li>
         <li><a href="#">浏览发现</a></li>
-        <li><a href="#">话题广场</a></li>
-        <li><a href="#">我的豆瓣</a></li>
+        <li><a href="#">我的收藏</a></li>
+        <li><a href="#">我的书豆</a></li>
     </ul>
     <ul style="direction: rtl;text-align: right">
         <li><input style="margin-right: 70px;text-align: left" type="text" placeholder="搜索你感兴趣的人和内容"></li>
@@ -146,9 +174,9 @@
         <p style="margin-left: 91px;
             font-family: 楷体;
             font-size: 24px;
-            margin-top: -75px;">坚持到底</p>
+            margin-top: -75px;">皮卡皮卡</p>
         <p style="margin-top: 80px;font-size: 18px;color: #20a162">我的日记</p>
-        <p class="text">记录自己的生活</p>
+        <p class="text" style="color: rgba(221, 221, 221,0.6)">记录自己的生活</p>
         <p class="title">我的相册</p>
         <p class="text">可以记录</p>
         <p class="title">想读的书</p>
@@ -163,30 +191,30 @@
             <hr style="margin-top: 90px">
             <p style="margin-top: 10px;margin-left: 5px;font-size: 14px">坚持到底</p>
         </div>
-        <p style="font-size: 18px;color: #20a162;margin-top: 10px">我的广播······(全部)</p>
+        <p style="font-size: 18px;color: #20a162;margin-top: 10px">我的喜欢</p>
 
         <p style="font-size: 14px;margin-top: 20px">
-            <a href="#" style="text-decoration: none;color: #1e9eb3">坚持到底</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">皮卡皮卡</a>
             想读
-            <a href="#" style="text-decoration: none;color: #1e9eb3">疑血</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">突然亡命天涯</a>
         </p>
         <p style="color: #aaaaaa;margin-top: 10px;font-size: 12px">2019年10月4日</p>
 
         <hr style="margin-top: 5px;width: 400px">
 
         <p style="font-size: 14px;margin-top: 10px">
-            <a href="#" style="text-decoration: none;color: #1e9eb3">坚持到底</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">皮卡皮卡</a>
             想读
-            <a href="#" style="text-decoration: none;color: #1e9eb3">日不落帝国</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">地学家的藏书室</a>
         </p>
         <p style="color: #aaaaaa;margin-top: 10px;font-size: 12px">2019年10月5日</p>
 
         <hr style="margin-top: 5px;width: 400px">
 
         <p style="font-size: 14px;margin-top: 10px">
-            <a href="#" style="text-decoration: none;color: #1e9eb3">坚持到底</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">皮卡皮卡</a>
             想读
-            <a href="#" style="text-decoration: none;color: #1e9eb3">不下雪的北上广</a>
+            <a href="#" style="text-decoration: none;color: #1e9eb3">梦之花</a>
         </p>
         <p style="color: #aaaaaa;margin-top: 10px;font-size: 12px">2019年10月5日</p>
 

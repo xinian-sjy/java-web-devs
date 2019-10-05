@@ -22,35 +22,13 @@ public class BookDetailServlet extends HttpServlet {
         String requestPath = req.getRequestURI().trim();
         int position = requestPath.lastIndexOf("/");
         String id = requestPath.substring(position + 1);
-//        ServletContext sc = this.getServletContext();
-//        List<Book> bookList = (List<Book>) sc.getAttribute("bookList");
         List<Book> bookList = LeftServlet.init();
         for (Book book : bookList) {
-//            if (Integer.parseInt(id) == book.getNumber()) {
             if (Integer.parseInt(id)==book.getNumber()){
                 req.setAttribute("book", book);
-                req.getRequestDispatcher("/book_detail.jsp").forward(req, resp);
+                req.getRequestDispatcher("/BookDetail.jsp").forward(req, resp);
             }
         }
 
-//        String requestPath = req.getRequestURI().trim();
-//        int position = requestPath.lastIndexOf("/");
-//        String id = requestPath.substring(position+1);
-//        List<Book> bookList = LeftServlet.init();
-//        for(Book book: bookList){
-//            if(Integer.parseInt(id) == book.getId()){
-//                req.setAttribute("book",book);
-//                req.getRequestDispatcher("/bookdetail.jsp").forward(req,resp);
-//            }
-//        String requestPath = req.getRequestURI().trim();
-//        int position = requestPath.lastIndexOf("/");
-//        String id = requestPath.substring(position+1);
-//        List<Book> bookList = LeftServlet.getBooklist();
-//        for(Book book: bookList){
-//            if(Integer.parseInt(id) == book.getId()){
-//                req.setAttribute("book",book);
-//                req.getRequestDispatcher("/bookdetail.jsp").forward(req,resp);
-//            }
-//        }
     }
 }

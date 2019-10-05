@@ -8,17 +8,19 @@
         /*iconfont图标，第三方登录用*/
         @font-face {
             font-family: 'iconfont';  /* project id 1443370 */
-            src: url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.eot');
-            src: url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.woff2') format('woff2'),
-            url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.woff') format('woff'),
-            url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_1443370_zcyvl4fiqgn.svg#iconfont') format('svg');
+            src: url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.eot');
+            src: url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1443370_45pq0ohe6y4.svg#iconfont') format('svg');
         }
+
+
 
         .iconfont{
             font-family:"iconfont" !important;
-            font-size:16px;font-style:normal;
+            font-size:40px;font-style:normal;
             -webkit-font-smoothing: antialiased;
             -webkit-text-stroke-width: 0.2px;
             -moz-osx-font-smoothing: grayscale;
@@ -31,6 +33,27 @@
         }
 
 
+        /*两条线和第三方登录字样横条区*/
+        .line-box {
+            width: 80%;
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /*线条样式*/
+        .line {
+            border-bottom: 1px solid #9b9b9b;
+            flex: 0 0 33%;
+        }
+
+        /*第三方登录文字样式*/
+        .login-3rd {
+            flex: 0 0 30%;
+            color: black;
+            font-size: 11px;
+            text-align: center;
+        }
 
         /*表单外层包裹容器*/
         .form-wrap {
@@ -105,6 +128,22 @@
             color: #fff;
             box-shadow: 2px 5px 10px #aaa;
         }
+        .icon-box {
+            width:50%;
+            display: inline-flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+        /*图标样式*/
+        .icon-box i {
+            flex: 0 0 33%;
+        }
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -127,13 +166,33 @@
                 <label>
                     <input type="password" name="password" class="input-box" placeholder="密码">
                 </label>
+
             </div>
+
             <div>
                 <label>
                     <input type="submit" value="立即登录" class="btn">
                 </label>
             </div>
+            <div class="line-box">
+                <span class="line"></span>
+                <span class="login-3rd">第三方登录</span>
+                <span class="line"></span>
+            </div>
+            <div class="icon-box">
+<!--                <i class="iconfont" >&#xe607;</i>-->
+<!--                <i class="iconfont">&#xe601;</i>-->
+<!--                <i class="iconfont">&#xe600;</i>-->
+<!--                <svg class="icon" aria-hidden="true">-->
+<!--                    <use xlink:href="#icon-&#xe607;"></use>-->
+<!--                </svg>-->
+                <i class="iconfont" style="color: rgb(81, 195, 50)">&#xe601;</i>
+                <i class="iconfont" style="color: rgb(48, 165, 221)">&#xe600;</i>
+                <i class="iconfont" style="color: rgb(230, 23, 45)">&#xe742;</i>
+            </div>
+
         </div>
+
 
     </form>
 </div>

@@ -42,6 +42,9 @@ public class LeftServlet {
 //        req.setAttribute("bookList" ,bookList);
 //        req.getRequestDispatcher("/index.jsp").forward(req,resp);
 //    }
+public LeftServlet(){
+    init();
+}
     private static List<Book> bookList;
 
     public static List<Book> init() {
@@ -59,7 +62,6 @@ public class LeftServlet {
                 new Book("梦之花","10.jpg","东野奎吾",10),
         };
         bookList = Arrays.asList(books);
-
         return bookList;
     }
 //

@@ -15,15 +15,16 @@
 <html>
 <head>
     <title>主页</title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css" type="text/css">
     <style type="text/css">
         @font-face {
             font-family: 'iconfont';  /* project id 1443370 */
-            src: url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.eot');
-            src: url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.eot?#iefix') format('embedded-opentype'),
-            url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.woff2') format('woff2'),
-            url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.woff') format('woff'),
-            url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.ttf') format('truetype'),
-            url('//at.alicdn.com/t/font_1443370_1biaq9d9y29.svg#iconfont') format('svg');
+            src: url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.eot');
+            src: url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1443370_zdhouxk8rda.svg#iconfont') format('svg');
         }
         .iconfont{
             font-family:"iconfont" !important;
@@ -81,7 +82,8 @@
             background-color: #ddd;
             display: flex;
             align-items: center;
-            padding-left: 10%;
+            /*padding-left: 10%;*/
+            padding-left: 8.3%;
             margin-bottom: 10px;
 
         }
@@ -124,6 +126,9 @@
             flex-wrap: wrap;
             padding: 5px 5px 5px 5px;
         }
+        .row li a{
+           color: #333333;
+        }
         .colum{
             flex: 0 0 18%;
             height: 220px;
@@ -147,21 +152,30 @@
             background-color: #FFFFFF;
             padding: 10px 10px 10px 10px;
         }
+        .button{
+
+            outline:none;
+
+        }
     </style>
 </head>
 <body>
-<header>
-    <jsp:include page="Top.jsp"/>
-</header>
+    <div id="top">
+        <jsp:include page="Top.jsp"/>
+    </div>
 
 
 
 <!-- 搜索区 -->
 <div class="search-wrap">
-    <h2>读书时刻</h2>
+    <h2 >读书时刻</h2>
     <input type="text" placeholder="输入要搜索的内容" class="input-box" >
-    <!-- <input type="button" value="&#xe60c;" /> -->
-    <i class="iconfont" style="color: white">&#xe6a1;</i>
+   <button style="border: 0px solid rgb(221, 221, 221)" class="button">
+       <i class="iconfont" style="color: white"  >&#xe605;</i>
+   </button>
+
+<%--    <input type="button" value="&#xe605;">--%>
+<%--       <input type="button" value="&#xe605;" />--%>
 </div>
 <%--一共${size}本书--%>
 <div class="container">
