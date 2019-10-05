@@ -43,14 +43,14 @@ public class UserService {
         }
         return  null;
     }
-
-    public static  void  main(String[] args){
-        User user = new UserService().sigln("13019999714", Md5Util.crypt("1234"));
-        if (user != null) {
-            System.out.println(user);
-        }else {
-            System.out.println("not found");
-        }
-    }
+//
+//    public static  void  main(String[] args){
+//        User user = new UserService().sigln("13019999714", Md5Util.crypt("1234"));
+//        if (user != null) {
+//            System.out.println(user);
+//        }else {
+//            System.out.println("not found");
+//        }
+//    }
 
 }

@@ -175,7 +175,7 @@
                     pageContext.setAttribute("book", book);
             %>
             <div class="colum">
-                <a href="${pageContext.request.contextPath}/detail/${book.id}">
+                <a href="${pageContext.request.contextPath}/detail/${book.number}">
                 <img src="images/${book.cover}" ></a>
                 <p>${book.name}</p>
                 <p>${book.author}</p>

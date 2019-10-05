@@ -1,7 +1,7 @@
 package com.web.entity;
 
 public class Book {
-    public Book(String name, String cover, String author, String number) {
+    public Book(String name, String cover, String author, Integer number) {
         this.name = name;
         this.cover = cover;
         this.author = author;
@@ -32,11 +32,11 @@ public class Book {
         this.author = author;
     }
 
-    public String getNumber() {
+    public Integer getNumber() {
         return number;
     }
 
-    public void setNumber(String number) {
+    public void setNumber(Integer number) {
         this.number = number;
     }
 
@@ -46,13 +46,16 @@ public class Book {
                 "name='" + name + '\'' +
                 ", cover='" + cover + '\'' +
                 ", author='" + author + '\'' +
-                ", number='" + number + '\'' +
+                ", number=" + number +
                 '}';
     }
 
     private  String name;
     private  String cover;
     private  String author;
-    private  String number;
+    private Integer number;
+
+
+
 
 }
