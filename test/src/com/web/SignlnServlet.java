@@ -1,6 +1,6 @@
 package com.web;
 
-import Util.Md5Util;
+import com.web.Util.Md5Util;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,12 +18,9 @@ import java.io.PrintWriter;
  * @Date 2019/9/25
  * @Version 1.0
  **/
-@WebServlet(urlPatterns = "sign_in")
+@WebServlet(urlPatterns = "/sign_in")
 public class SignlnServlet extends HttpServlet {
     protected void  doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
-        resp.setContentType("text/html;charse=UTF-8");
-        resp.setCharacterEncoding("UTF-8");
-        PrintWriter out=resp.getWriter();
         String account =req.getParameter("account");
         String password =req.getParameter("password");
         Userservice userService = new Userservice();
@@ -33,7 +30,10 @@ public class SignlnServlet extends HttpServlet {
             session.setAttribute("user", user);
             resp.sendRedirect("/index");
         } else {
-            out.print("<script>alert('账号或密码错误');location.href='/';</script>");
+            resp.setContentType("text/html;charset=UTF-8");
+            resp.setCharacterEncoding("UTF-8");
+            PrintWriter out=resp.getWriter();
+            out.print("<script>alert('账号或密码错误');location.href='/login.html';</script>");
         }
 
     }

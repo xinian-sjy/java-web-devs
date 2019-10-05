@@ -28,7 +28,7 @@ public class IndexServlet extends HttpServlet {
         };
         List<Book> bookList= Arrays.asList(books);
         req.setAttribute("bookList" ,bookList);
-        req.getRequestDispatcher("index.jsp").forward(req,resp);
+        req.getRequestDispatcher("/index.jsp").forward(req,resp);
 
     }
 }

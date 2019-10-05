@@ -152,11 +152,11 @@
             background-color: #FFFFFF;
             padding: 10px 10px 10px 10px;
         }
-        /*.button{*/
+        .button{
 
-        /*    outline:none;*/
+            outline:none;
 
-        /*}*/
+        }
     </style>
 </head>
 <body>
@@ -171,7 +171,7 @@
     <h2 >读书时刻</h2>
     <input type="text" placeholder="输入要搜索的内容" class="input-box" >
 
-   <button style="color:  rgb(221, 221, 221)" class="button">
+   <button style="border: 0px solid  rgb(221, 221, 221)" class="button">
        <a href="search.jsp">
            <i class="iconfont" style="color: white"  >&#xe605;</i>
        </a>

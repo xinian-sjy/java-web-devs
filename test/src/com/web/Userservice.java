@@ -1,8 +1,7 @@
 package com.web;
 
-//import com.sun.security.auth.module.Crypt;
 
-import Util.Md5Util;
+import com.web.Util.Md5Util;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -41,8 +40,12 @@ public class Userservice {
         return  null;
     }
     public static  void  main(String[] args){
-        User user = new Userservice().sigln("aaa", Md5Util.crypt("111"));
-        System.out.println();
+        User user = new Userservice().sigln("13019999714", Md5Util.crypt("1234"));
+        if (user != null) {
+            System.out.println(user);
+        }else {
+            System.out.println("not found");
+        }
     }
 
 }
